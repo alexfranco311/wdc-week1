@@ -10,56 +10,22 @@
     height: 80px;
     margin: 0 0 1em 0;
     display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid #479AD1;
     color: #26727E;
 }
 
 .navbar a {
     color: #26727E;
-}
-
-.navbar .leftSide {
-    flex: 50%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.navbar .leftSide a {
     text-decoration: none;
+}
+
+.logo {
+    text-decoration: none;
+    padding: 20px 0;
     font-family: 'Playfair Display';
     font-size: 35px;
     font-style: italic;
     font-weight: bold;
     margin-left: 15px;
-}
-
-.navbar .rightSide {
-    flex: 50%;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-.navbar .rightSide a {
-    text-decoration: none;
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: -1px;
-    margin-right: 15px;
-    border: 1px solid #479AD1;
-    border-radius: 5%;
-    padding: .60em;
-}
-
-.navbar .rightSide a:hover {
-    background-color: #479AD1;
-    color: #EFF8F3;
-    transition-duration: .5s;
-}
-
-@media screen and (max-width: 768px) {
-    .rightSide a {
-        flex-flow: column nowrap;
-    }
 }
