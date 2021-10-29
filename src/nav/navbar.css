@@ -1,12 +1,16 @@
+@font-face {
+    font-family: 'Playfair Display', Serif;
+    Font-Family: 'Source Sans Pro', Sans-Serif;
+    src: url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i|Source+Sans+Pro);
+}
+
 .navbar {
     background-color: #EFF8F3;
-    float: left;
     width: 100%;
     height: 80px;
     margin: 0 0 1em 0;
     display: flex;
     border-bottom: 1px solid #479AD1;
-    font-family: monospace;
     color: #26727E;
 }
 
@@ -21,13 +25,13 @@
     align-items: center;
 }
 
-.navbar .leftSide .logo a {
+.navbar .leftSide a {
     text-decoration: none;
+    font-family: 'Playfair Display';
     font-size: 35px;
     font-style: italic;
     font-weight: bold;
     margin-left: 15px;
-
 }
 
 .navbar .rightSide {
@@ -37,8 +41,25 @@
     align-items: center;
 }
 
-.navbar .rightSide .links a {
+.navbar .rightSide a {
     text-decoration: none;
     font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -1px;
     margin-right: 15px;
+    border: 1px solid #479AD1;
+    border-radius: 5%;
+    padding: .60em;
+}
+
+.navbar .rightSide a:hover {
+    background-color: #479AD1;
+    color: #EFF8F3;
+    transition-duration: .5s;
+}
+
+@media screen and (max-width: 768px) {
+    .rightSide a {
+        flex-flow: column nowrap;
+    }
 }
