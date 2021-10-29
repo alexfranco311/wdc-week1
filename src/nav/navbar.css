@@ -1,0 +1,44 @@
+.navbar {
+    background-color: #EFF8F3;
+    float: left;
+    width: 100%;
+    height: 80px;
+    margin: 0 0 1em 0;
+    display: flex;
+    border-bottom: 1px solid #479AD1;
+    font-family: monospace;
+    color: #26727E;
+}
+
+.navbar a {
+    color: #26727E;
+}
+
+.navbar .leftSide {
+    flex: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.navbar .leftSide .logo a {
+    text-decoration: none;
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 15px;
+
+}
+
+.navbar .rightSide {
+    flex: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.navbar .rightSide .links a {
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 15px;
+}

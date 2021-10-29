@@ -1,11 +1,25 @@
-import React, {useState} from 'react';
+import React from 'react';
+import './navbar.css';
 
-function navbar() {
+
+function Navbar() {
     return (
-        <div className="navbar">
-            <div className="navbar-container"></div>
-        </div>
+        <nav className="navbar">
+                <div className="leftSide">
+                    <div className="logo">
+                        <a href="/">Isla Sand</a>
+                    </div>
+                </div>
+            <div className="rightSide">
+                <div className="links">
+                    <a href="/">Location</a>
+                    <a href="/">Attractions</a>
+                    <a href="/">Reviews</a>
+                </div>
+            </div>
+                
+        </nav>
     )
 }
 
-export default navbar
+export default Navbar

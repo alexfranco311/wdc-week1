@@ -1,8 +1,13 @@
-This project was done as a part of the WebDev challenges Discord.
+This project was done as a part of the WebDev Challenges Discord Server.
+
 Join us at https://discord.gg/KNUBf2G92d
+
 🏆  Week One Challenge! 🏆 
+
 Difficulty: Beginner/Intermediate 🟢|🟡 
+
 The Challenge:
+
 Let's start this nice and simple, in this weeks challenge you are going to be creating a single-page website for a fictional island with a name of your choosing, you will need to include the following criteria:
 
 -The site must have a bright, modern design with a primarily white design with blue accents.
