@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import FeatureBackground from './images/ryan-pernofski-weuZKB19ZeU-unsplash.jpg'
+import Carousel from './components/Carousel/carousel.js'
 
 const Feature = styled.div`
     width: 100%;
@@ -39,7 +40,11 @@ const Feature = styled.div`
 `;
 
 const Attractions = styled.div`
-
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    background-color: #EFF8F3;
 `;
 
 const Reviews = styled.div`
@@ -55,13 +60,7 @@ function Body() {
             </section>
         </Feature>
         <Attractions>
-            <section className="attCont">
-
-            </section>
-            <section className="attCont">
-
-            </section>
-
+            <Carousel />
         </Attractions>
         <Reviews>
 
