@@ -14,6 +14,7 @@ const Rev = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        padding-bottom: 30px;
     }
 
     .card {
