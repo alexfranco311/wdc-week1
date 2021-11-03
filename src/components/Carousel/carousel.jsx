@@ -22,11 +22,11 @@ const Car = styled.div`
         height: auto;
     }
     
-    .carousel-item-hidden {
+    .--hidden {
         display: none;
     }
 
-    .carousel-item-visible {
+    .--visible {
         display: block;
         animation: fadeVisibility 1s;
     }
@@ -73,14 +73,15 @@ function Carousel() {
     let slidePosition = 0;
     const slides = document.getElementsByClassName('carousel-item');
     const totalSlides = slides.length;
+
+    console.log(slides)
     
     function updateSlidePosition(){
         for(let slide of slides) {
-            slide.classList.remove('carousel-item-visible');
-            slide.classList.add('carousel-item-hidden');
+            slide.classList.remove('--visible');
+            slide.classList.add('--hidden');
         };
-    
-        slides[slidePosition].classList.add('carousel-item-visible');
+        slides[slidePosition].classList.add('--visible');
     };
     
     function moveToNextSlide(){
@@ -101,17 +102,9 @@ function Carousel() {
         updateSlidePosition();
     };
     
-    document.getElementById('carousel-button-next').addEventListener("click", function() {
-        moveToNextSlide();
-    });
-    
-    document.getElementById('carousel-button-prev').addEventListener("click", function() {
-        moveToPrevSlide();
-    });
-    
     return (
         <Car className="carousel">
-            <div className="carousel-item carousel-item-visible">
+            <div className="carousel-item --visible">
                 <img src={imgKayak} alt="Kayak"/>
                 <h2>Kayaking</h2>
             </div>
@@ -133,8 +126,8 @@ function Carousel() {
             </div>
 
             <div className="carousel-actions">
-                <button id="carousel-button-prev" aria-label="Previous Slide">〈</button>
-                <button id="carousel-button-next" aria-label="Next Slide">〉</button>
+                <button id="carousel-button-prev" aria-label="Previous Slide" onClick={moveToPrevSlide}>〈</button>
+                <button id="carousel-button-next" aria-label="Next Slide" onClick={moveToNextSlide}>〉</button>
             </div>
         </Car>
     )

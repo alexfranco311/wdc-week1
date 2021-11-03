@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import FeatureBackground from './images/ryan-pernofski-weuZKB19ZeU-unsplash.jpg'
 import Carousel from './components/Carousel/carousel';
+import Reviews from './components/reviews';
 
 const Feature = styled.div`
     width: 100%;
@@ -44,11 +45,20 @@ const Attractions = styled.div`
     width: 100%;
     text-align: center;
     color: #26727E;
-    
+
 `;
 
-const Reviews = styled.div`
-
+const ReviewsContainer = styled.div`
+    background-color: #EFF8F3;
+    width: 100%;
+    color: #26727E;
+    
+    .heading {
+        padding-left: 15%;
+        font-size: 2rem;
+        font-style: italic;
+        text-decoration: underline;
+    }
 `;
 
 function Body() {
@@ -64,9 +74,11 @@ function Body() {
             <h1>Come see why we are the premier destination for coders everywhere</h1>
             <Carousel />
         </Attractions>
-        <Reviews>
-
-        </Reviews>
+        <ReviewsContainer>
+            <br/>
+            <h2 className="heading">Reviews:</h2>
+            <Reviews />
+        </ReviewsContainer>
         </>
     )
 }
